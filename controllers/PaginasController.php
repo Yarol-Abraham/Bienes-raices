@@ -57,9 +57,10 @@ class PaginasController
     //pagina de contacto
     public static function contacto(Router $router)
     {
+        $mensaje = "";
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // obtenemos los datos del formulario
-            $respuesta = $_POST["contacto"];
+            $datos = $_POST["contacto"];
             // instanciamos Mailer
             $mail = new PHPMailer();
             // configurar smtp
@@ -78,19 +79,27 @@ class PaginasController
             $mail->isHTML(true);
             $mail->CharSet = "UTF-8";
             // definir el contenido
-            $contenido = "<html><p>Hola, tienes un nuevo mensaje</p></html>";
+            $contenido = "<html>";
+            $contenido .= "<p>Hola, Gracias por contactarnos😀" . $datos["nombre"] . "</p>";
+            $contenido .= "<p>Email: " . $datos["correo"] . "</p>";
+            $contenido .= "<p>Telefono: " . $datos["telefono"] . "</p>";
+            $contenido .= "<p>Mensaje: " . $datos["mensaje"] . "</p>";
+            $contenido .= "<p>Vende o Compra: " . $datos["categoria"] . "</p>";
+            $contenido .= "<p>Presupuesto: " . "Q" . $datos["presupuesto"] . "</p>";
+            $contenido .= "</html>";
             $mail->Body = $contenido;
             $mail->AltBody = "Mensaje alternativo sin html";
             // enviar el email
             if ($mail->send()) {
-                echo "Mensaje enviado correctamente";
+                $mensaje = "Mensaje enviado correctamente";
             } else {
-                echo "Ha ocurrido un error inesperado";
+                $mensaje = "Ha ocurrido un error inesperado";
             }
         }
         $router->render("/paginas/contacto", [
             "page" => "Contacto",
-            "index" => false
+            "index" => false,
+            "mensaje" => $mensaje
         ]);
     }
     //pagina de blog
