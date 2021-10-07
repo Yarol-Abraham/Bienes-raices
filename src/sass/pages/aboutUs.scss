@@ -1,0 +1,69 @@
+.aboutUs {
+  &__hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30rem;
+    background: linear-gradient(
+        135deg,
+        rgba(24, 131, 104, 0.9) 0%,
+        rgba(255, 255, 255, 0.568) 100%
+      ),
+      url("/src/img/nosotros.jpg") center no-repeat;
+    background-size: cover;
+    vertical-align: top;
+  }
+  &__title {
+    color: $blanco;
+    font-size: 3.5rem;
+    font-weight: $bold;
+    animation-name: moveInBottom;
+    animation-duration: 1s;
+  }
+  &__box {
+    padding: 2rem;
+    width: 100%;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &--hero {
+      background: $verdeClasico;
+    }
+  }
+  &__imagen {
+    width: 100%;
+    @include tablet {
+      width: 45%;
+    }
+  }
+  &__content {
+    width: 100%;
+    @include tablet {
+      width: 45%;
+    }
+  }
+  &__concepts {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include tablet {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+    &--item {
+      width: 100%;
+      @include tablet {
+        width: 45%;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "name": "yarolchoc/bienes_raices",
+    "description": "proyecto de bienes raices con php,javascript,parcel y sass",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Model\\": "./models",
+            "MVC\\": "./",
+            "Controllers\\": "./controllers"
+        }
+    },
+    "authors": [
+        {
+            "name": "Abraham",
+            "email": "59816968+Yarol-Abraham@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "intervention/image": "^2.6",
+        "phpmailer/phpmailer": "^6.5"
+    }
+}

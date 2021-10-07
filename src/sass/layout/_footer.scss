@@ -1,0 +1,34 @@
+.footer {
+  height: 35vh;
+  background: $blanco_gris;
+  &-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  &__menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include tablet {
+      width: 50%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &--item {
+      margin-bottom: 2rem;
+      transition: all 0.2s;
+      @include tablet {
+        margin-bottom: 0;
+      }
+    }
+    &--item:hover {
+      color: $verde;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.479);
+      transform: rotate(5deg) scale(1.5);
+    }
+  }
+}

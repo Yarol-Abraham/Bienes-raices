@@ -1,0 +1,20 @@
+{
+  "name": "bienes-raices",
+  "version": "1.0.0",
+  "description": "bienes raices",
+  "main": "dist/index.js",
+  "scripts": {
+    "start:sass": "parcel ./src/sass/main.scss",
+    "start:js": "parcel ./src/js/index.js",
+    "build:sass": "parcel build ./src/sass/main.scss --dist-dir ./dist",
+    "build:js": "parcel build ./src/js/index.js --dist-dir ./dist"
+  },
+  "author": "Yarol Abraham",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-beta.3.1",
+    "parcel": "^2.0.0-beta.3.1",
+    "sass": "^1.35.2"
+  }
+}

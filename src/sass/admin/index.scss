@@ -1,0 +1,101 @@
+.admin {
+  &-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+  &__btn {
+    background: $verde;
+    padding: 1rem;
+    width: 25rem;
+    color: $blanco;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: $bold;
+    margin: 0.5rem;
+    transition: all 650ms ease;
+  }
+  &__btn:hover {
+    background: $verdeClaro;
+  }
+}
+.propiedades {
+  &-box {
+    overflow: scroll;
+    @include tablet {
+      overflow: hidden;
+    }
+  }
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+  overflow: scroll;
+  &__thead {
+    background-color: $blanco_gris;
+    &--item {
+      font-weight: $bold;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      padding: 1rem;
+    }
+  }
+  &__tbody {
+    text-align: center;
+    &--item {
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
+  }
+  &__tbody tr:nth-child(odd) {
+    background: $blanco;
+  }
+  &__tbody tr:nth-child(even) {
+    background: $blanco_gris;
+  }
+  &__imagen {
+    width: 10rem;
+  }
+  &__imagen img {
+    border-radius: 0.8rem;
+  }
+  &__acciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+  &___btn {
+    &--edit,
+    &--delete {
+      padding: 1rem;
+      width: 10rem;
+      margin: 1rem;
+      color: $blanco;
+      font-weight: $bold;
+      font-size: 1.2rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      text-align: center;
+    }
+    &--edit {
+      background: $verdeClasico;
+    }
+    &--delete {
+      background: $rojo;
+    }
+  }
+}
+
+.edit {
+  &__preview--imagen {
+    width: 50%;
+  }
+}

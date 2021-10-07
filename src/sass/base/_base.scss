@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $fuente_principal;
+  letter-spacing: 0.2rem;
+  background: $blanco;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  transition: 650ms all ease-in-out;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  border: none;
+  border-radius: 0.8rem;
+  transition: all 650ms ease-in-out;
+  outline: none;
+}
+
+.container {
+  width: 80%;
+  padding: 5rem 0;
+  margin: 0 auto;
+}
+
+.text-primary {
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid $verde;
+}
+
+.text-tertiary {
+  font-size: 1.6rem;
+}
+
+.text-tertiary--title {
+  font-size: 1.8rem;
+  color: $negro;
+  font-weight: $bold;
+}
+
+.text-paragraph {
+  font-size: 1.3rem;
+}
+
+.text-autor {
+  color: $grisOscuro;
+}
+
+// UTILS
+.box-options {
+  margin-bottom: 2rem;
+}
+.u-spacing-card-bottom {
+  margin-bottom: 2rem;
+}
+
+.text-white {
+  color: $blanco;
+}
+
+.alert {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: $blanco;
+}
+
+.alert-success {
+  background-color: $verdeClasico;
+}
+
+.alert-error {
+  background-color: $rojo;
+}
+
+// Buttons
+.btn_back {
+  background: $verdeClaro;
+  color: $blanco;
+  font-weight: $bold;
+  padding: 1rem;
+  margin-bottom: 20rem;
+}

@@ -1,0 +1,40 @@
+.entrada {
+  &-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    font-size: 3rem;
+    font-weight: $regular;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    @include tablet {
+      width: 50%;
+      font-size: 4rem;
+    }
+    &--paragraph {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: $normal;
+      width: 50%;
+      @include tablet {
+        width: 50%;
+        font-size: 2rem;
+      }
+    }
+  }
+  &__hero {
+    width: 100%;
+    @include tablet {
+      width: 50%;
+    }
+  }
+  &__paragraph {
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    line-height: 37px;
+  }
+}

@@ -1,0 +1,87 @@
+.header {
+  &--hero {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+        to right bottom,
+        $verdeClasico,
+        rgba(0, 0, 0, 0.034)
+      ),
+      url(/src/img/header.jpg);
+    background-size: cover;
+  }
+  &--page {
+    background-color: $verdeClasico;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_primary {
+    color: $blanco;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation-name: moveInBottom;
+    animation-duration: 1s;
+    @include tablet {
+      left: 20%;
+      font-size: 2.5rem;
+    }
+  }
+
+  &__logo {
+    width: 20rem;
+  }
+
+  &__menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    @include tablet {
+      display: flex;
+      padding: 0;
+    }
+    &--btn {
+      width: 3rem;
+      background-color: transparent;
+      @include tablet {
+        display: none;
+      }
+    }
+    &--nav {
+      display: flex;
+    }
+    &--item {
+      color: $blanco;
+      font-size: 1.5rem;
+      padding: 0 1rem;
+      font-weight: $bold;
+      text-align: center;
+      transition: all 0.2s;
+    }
+    &--item:hover {
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.479);
+      transform: rotate(5deg) scale(1.3);
+    }
+  }
+  &__menu.open--menu {
+    display: flex;
+  }
+}
