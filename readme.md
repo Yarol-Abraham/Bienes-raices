@@ -34,6 +34,6 @@
 <h1>Paginas de Administrador</h1>
 <img src="/public/readme/preview_2.png" alt="preview" />
 <p>
-Nota 1: Solo se agregaron algunas imagenes principal </br>
+Nota 1: Solo se agregaron algunas imagenes principales </br>
 Nota 2: este proyecto actualmente no cuenta con alojamiento en la web 😥
 </p>
