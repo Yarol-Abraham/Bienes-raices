@@ -1,8 +1,3 @@
-<?php
-
-//verificar la sesion
-//verifcarSesion();
-?>
 <main>
     <section class="edit">
         <div class="container">

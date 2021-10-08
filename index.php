@@ -7,6 +7,7 @@ use Controllers\PropiedadController;
 use Controllers\ErrorController;
 use Controllers\VendedoresController;
 use Controllers\PaginasController;
+use Controllers\AutenticacionController;
 // agregamos las rutas al router
 $router = new Router();
 //propiedades
@@ -35,6 +36,10 @@ $router->get("/blog/inicio", [PaginasController::class, 'blog']);
 $router->get("/blog/entrada", [PaginasController::class, 'entrada']);
 $router->get("/contacto/inicio", [PaginasController::class, 'contacto']);
 $router->post("/contacto/inicio", [PaginasController::class, 'contacto']);
+// login y autenticacion
+$router->get("/auth/login", [AutenticacionController::class, 'login']);
+$router->post("/auth/login", [AutenticacionController::class, 'login']);
+$router->get("/auth/logout", [AutenticacionController::class, 'logout']);
 // si se produce un error anonimo:
 $router->get("/error/inicio", [ErrorController::class, 'index']);
 // comprobamos que la ruta exista, si existe renderizamos la vista

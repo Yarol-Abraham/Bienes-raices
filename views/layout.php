@@ -52,7 +52,7 @@ $auth = $_SESSION['login'] ?? null;
                         <a href="/bienes-raices/contacto/inicio" class="header__menu--item">Contacto</a>
                     <?php } ?>
                     <?php if ($auth) { ?>
-                        <a href="/bienes_raices/cerrar_sesion.php" class="header__menu--item">Cerrar sesion</a>
+                        <a href="/bienes-raices/auth/logout" class="header__menu--item">Cerrar sesion</a>
                     <?php } ?>
                 </nav>
             </div>

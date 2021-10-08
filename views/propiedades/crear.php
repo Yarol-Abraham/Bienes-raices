@@ -1,10 +1,3 @@
-<?php
-
-//verificar la sesion
-//verifcarSesion();
-
-
-?>
 <main>
     <section class="create">
         <div class="container">

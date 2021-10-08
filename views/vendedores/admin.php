@@ -1,8 +1,3 @@
-<?php
-//verificar la sesion
-//verifcarSesion();
-?>
-
 <main>
     <section class="admin">
         <div class="container">
