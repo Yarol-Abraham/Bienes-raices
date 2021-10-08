@@ -27,13 +27,13 @@
     phpmailer/phpmailer (composer)
 </li>
 </ul>
-# Paginas de Inicio
+<h1>Paginas de Inicio</h1>
 <img src="/public/readme/preview_1.png" alt="preview" />
-# Paginas de secciones
+<h1>Paginas de Secciones</h1>
 <img src="/public/readme/preview_3.png" alt="preview" />
-# Paginas de administrador
+<h1>Paginas de Administrador</h1>
 <img src="/public/readme/preview_2.png" alt="preview" />
 <p>
-Nota 1: Solo se agregaron algunas imagenes principal
+Nota 1: Solo se agregaron algunas imagenes principal </br>
 Nota 2: este proyecto actualmente no cuenta con alojamiento en la web 😥
 </p>
