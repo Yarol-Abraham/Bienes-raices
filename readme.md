@@ -36,7 +36,7 @@
 <img src="/public/readme/preview_2.png" alt="preview" />
 <ul>
 <li>
-Nota 1: Solo se agregaron algunas imagenes principal 😅
+Nota 1: Solo se agregaron algunas imagenes principales 😅
 </li>
 <li>
 Nota 2: este proyecto actualmente no cuenta con alojamiento en la web 😥
