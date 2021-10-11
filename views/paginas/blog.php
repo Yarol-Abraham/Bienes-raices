@@ -2,7 +2,7 @@
 
     <section class="blog">
         <div class="blog__hero">
-            <h1 class="blog__title">Nuestro blog</h1>
+            <h1 data-cy="title-blog" class="blog__title">Nuestro Blog</h1>
         </div>
         <div class="container">
             <div class="blog-box">

@@ -3,7 +3,7 @@
     <section class="anuncio">
         <div class="container anuncio-box">
             <div class="anuncio__title">
-                <h1 class="text-primary"><?php echo $propiedad->titulo; ?></h1>
+                <h1 data-cy="title-anuncio" class="text-primary"><?php echo $propiedad->titulo; ?></h1>
                 <h3 class="text-primary">$<?php echo $propiedad->precio; ?></h3>
             </div>
             <div class="anuncio__preview">

@@ -24,10 +24,7 @@ $auth = $_SESSION['login'] ?? null;
     <header class="header <?php echo $index ? "header--hero" : "header--page"; ?>">
         <?php
         echo $index ?
-            "<h1 class='header_primary'>
-                Venta de Casas y Departamentos <br> 
-                Exclusivos de Lujo
-            </h1>"
+            "<h1 class='header_primary' data-cy='title-1'>Venta de Casas y Departamentos<br> Exclusivos de Lujo</h1>"
             : "";
         ?>
         <div class="container header__box">
@@ -44,7 +41,7 @@ $auth = $_SESSION['login'] ?? null;
                 </button>
             </div>
             <div class="header__menu">
-                <nav class="header__menu--nav">
+                <nav data-cy="navegacion-header" class="header__menu--nav">
                     <?php if ($page !== "Admin") { ?>
                         <a href="/bienes-raices/nosotros/inicio" class="header__menu--item">Nosotros</a>
                         <a href="/bienes-raices/anuncios/inicio" class="header__menu--item">Anuncios</a>
@@ -63,7 +60,7 @@ $auth = $_SESSION['login'] ?? null;
 
     <footer class="footer">
         <div class="container footer-box">
-            <nav class="footer__menu">
+            <nav data-cy="navegacion-footer" class="footer__menu">
                 <a href="/bienes-raices/nosotros/inicio" class="text-paragraph text-autor footer__menu--item">Nosotros</a>
                 <a href="/bienes-raices/anuncios/inicio" class="text-paragraph text-autor footer__menu--item">Anuncios</a>
                 <a href="/bienes-raices/blog/inicio" class="text-paragraph text-autor footer__menu--item">Blog</a>

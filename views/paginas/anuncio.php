@@ -28,7 +28,7 @@ foreach ($propiedades as $anuncio) :
                     <span><?php echo $anuncio->estacionamientos; ?></span>
                 </div>
             </div>
-            <a href="/bienes-raices/anuncios/anuncio?id=<?php echo $anuncio->id; ?>" class="btn ventas__body--btn">Detalles &rarr;</a>
+            <a data-cy="enlace-propiedad" href="/bienes-raices/anuncios/anuncio?id=<?php echo $anuncio->id; ?>" class="btn ventas__body--btn">Detalles &rarr;</a>
         </div>
         <div class="ventas__footer">
             <?php

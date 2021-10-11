@@ -58,6 +58,7 @@ class PaginasController
     public static function contacto(Router $router)
     {
         $mensaje = "";
+        $type = "";
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // obtenemos los datos del formulario
             $datos = $_POST["contacto"];
@@ -92,14 +93,17 @@ class PaginasController
             // enviar el email
             if ($mail->send()) {
                 $mensaje = "Mensaje enviado correctamente";
+                $type = "success";
             } else {
                 $mensaje = "Ha ocurrido un error inesperado";
+                $type = "error";
             }
         }
         $router->render("/paginas/contacto", [
             "page" => "Contacto",
             "index" => false,
-            "mensaje" => $mensaje
+            "mensaje" => $mensaje,
+            "type" => $type
         ]);
     }
     //pagina de blog

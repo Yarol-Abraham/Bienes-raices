@@ -1,7 +1,7 @@
 <main>
     <section class="admin">
         <div class="container">
-            <h1 class="text-primary">Administrador - Bienes Raices</h1>
+            <h1 data-cy="title-admin" class="text-primary">Administrador - Bienes Raices</h1>
             <?php if ($result === "propiedad") { ?>
                 <p class="alert alert-success">Propiedad creada exitosamente</p>
             <?php  } elseif ($result === "error") { ?>

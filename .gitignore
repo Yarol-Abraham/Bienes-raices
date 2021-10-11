@@ -4,3 +4,5 @@ node_modules
 administrador.php
 /vendor/
 dist
+cypress
+cypress.json

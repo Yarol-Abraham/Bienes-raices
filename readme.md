@@ -1,11 +1,12 @@
-# Yarol Abraham - Procesamiento de imagenes
+# Yarol Abraham - Bienes Raices
 
 <p>
-    Este proyecto fue realizado con MVC utilizando el lenguaje de php
+    Este proyecto fue realizado con MVC utilizando el lenguaje de php. <br>
+    Este proyecto es 100% responsivo📱💻🖥
 </p>
 </br>
 <p>
-    Lenguajes y librerias utilizadas
+    Lenguajes y librerias utilizadas para el proyecto 😅
 </p>
 <ul>
 <li>
@@ -27,13 +28,20 @@
     phpmailer/phpmailer (composer)
 </li>
 </ul>
-# Paginas de Inicio
+<h1>Paginas de Inicio</h1>
 <img src="/public/readme/preview_1.png" alt="preview" />
-# Paginas de secciones
+<h1>Paginas de secciones</h1>
 <img src="/public/readme/preview_3.png" alt="preview" />
-# Paginas de administrador
+<h1>Paginas de administrador</h1>
 <img src="/public/readme/preview_2.png" alt="preview" />
-<p>
-Nota 1: Solo se agregaron algunas imagenes principal
+<ul>
+<li>
+Nota 1: Solo se agregaron algunas imagenes principal 😅
+</li>
+<li>
 Nota 2: este proyecto actualmente no cuenta con alojamiento en la web 😥
-</p>
+</li>
+<li>
+    Autor original del proyecto: <a href="https://github.com/juanpablogdl" target="_blank">Juan Pablo de la Torre</a>
+</li>
+</ul>

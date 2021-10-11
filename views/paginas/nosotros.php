@@ -2,7 +2,7 @@
 
     <section class="aboutUs">
         <div class="aboutUs__hero">
-            <h1 class="aboutUs__title">Acerca de Nosotros</h1>
+            <h1 data-cy="title-nosotros" class="aboutUs__title">Acerca de Nosotros</h1>
         </div>
         <div class="about">
             <?php include __DIR__ . "/about.php"; ?>
